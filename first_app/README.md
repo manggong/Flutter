@@ -1,16 +1,18 @@
-# first_app
+### flutter
 
-A new Flutter project.
+#### StatelessWidget
 
-## Getting Started
+- 상태를 가지지 않는 위젯을 구성하는 기본 클래스
+- 프로퍼티 변수를 가지지 않음
+- build() 메서드를 가지고 있고, 웨젯을 생성할 때 호출 됨 => 화면 작성
 
-This project is a starting point for a Flutter application.
+#### MaterialApp
 
-A few resources to get you started if this is your first Flutter project:
+- title, theme, home를 가지고 있음
+  - `title`: 제목
+  - `theme`: 테마
+  - `home`: 실직적으로 앱에 표시되는 위젯
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### StatefulWidget 클래스
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 상태가 있는 widget 정의
