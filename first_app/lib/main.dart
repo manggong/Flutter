@@ -25,7 +25,13 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("제목")
       ),
-      body: Text("공부하는데 소현이가 노래 부른다!")
+      body: Container(
+        color: Colors.red,
+        width: 100,
+        height: 100,
+        padding: const EdgeInsets.all(8.0),
+        margin: const EdgeInsets.all(8.0)
+      ) // 본문 들어갈 부분
     );
   }
 }
