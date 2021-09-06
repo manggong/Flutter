@@ -25,7 +25,11 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("제목")
       ),
-      body: Column(
+      body: Row( // Colunm, Row
+        mainAxisSize: MainAxisSize.max, // 가로로 꽉 채우기
+        mainAxisAlignment: MainAxisAlignment.center, // 가로 방향으로 가운데 정렬하기 justify-content
+        crossAxisAlignment: CrossAxisAlignment.center, // 세로 방향으로 가운데 정렬하기 align-items
+        // mainAxis 기본방향, CrossAxis 반대 축
         children: <Widget>[
           Container(
             color: Colors.red,
