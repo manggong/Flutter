@@ -1,16 +1,15 @@
-# basic_ui
+### Basic UI
 
-A new Flutter project.
+#### 1. 뼈대 작성
 
-## Getting Started
+#### 2. BottomNavigationBar 위젯을 이용한 하단 탭 구성
 
-This project is a starting point for a Flutter application.
+#### 3. AppBar 위젯 수정
 
-A few resources to get you started if this is your first Flutter project:
+#### 4. 화면이 3개인 UI 작성
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### 5. 상단 부분
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### 6. 중단 부분
+
+#### 7. 하단 부분
