@@ -29,7 +29,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basic UI'),
+        title: Text('Basic UI',
+        style: TextStyle(color: Colors.black)
+        ),
+        centerTitle: true,
       ),
       body: Center(
         child: Text(
