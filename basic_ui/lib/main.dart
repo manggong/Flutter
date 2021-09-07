@@ -23,9 +23,42 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var _index = 0;
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Basic UI'),
+      ),
+      body: Center(
+        child: Text(
+          '$_index 페이지',
+          style: TextStyle(fontSize:40),
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (index) {
+          setState(() {
+            _index = index;
+          });
+        },
+        currentIndex: _index,
+        items: <BottomNavigationBarItem> [
+          BottomNavigationBarItem(
+            label: '홈',
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: '이용서비스',
+            icon: Icon(Icons.assignment),
+          ),
+          BottomNavigationBarItem(
+            label: '내 정보',
+            icon: Icon(Icons.account_circle),
+          ),
+        ],
+      ),
+    );
   }
 }
