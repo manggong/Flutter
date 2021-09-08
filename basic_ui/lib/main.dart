@@ -36,8 +36,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text('Basic UI',
-        style: TextStyle(color: Colors.black)
+        style: TextStyle(color: Colors.black),
         ),
+        actions: <Widget> [
+          IconButton(
+            icon: Icon(
+              Icons.add,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          )
+        ],
         centerTitle: true,
       ),
       body: _page[_index],
