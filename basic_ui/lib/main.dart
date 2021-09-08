@@ -89,46 +89,146 @@ class Page1 extends StatelessWidget {
   }
 
   Widget _buildTop() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Column(
       children: <Widget> [
-        Column(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget> [
-            Icon(
-              Icons.local_taxi,
-              size: 40,
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('택시')
+              ]
             ),
-            Text('택시')
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('블랙')
+              ]
+            ),
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('바이크')
+              ]
+            ),
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('트럭')
+              ]
+            )
           ]
         ),
-        Column(
+        SizedBox(
+          height: 20,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget> [
-            Icon(
-              Icons.local_taxi,
-              size: 40,
+            GestureDetector(
+              onTap: () {
+                print("event detecting");
+              },
+              child: Column(
+                children: <Widget> [
+                  Icon(
+                    Icons.local_taxi,
+                    size: 40,
+                  ),
+                  Text('이벤트 등록 됨!!!')
+                ]
+              ),
             ),
-            Text('블랙')
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('블랙')
+              ]
+            ),
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('바이크')
+              ]
+            ),
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('트럭')
+              ]
+            )
           ]
         ),
-        Column(
+        SizedBox(
+          height: 20,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget> [
-            Icon(
-              Icons.local_taxi,
-              size: 40,
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('택시')
+              ]
             ),
-            Text('바이크')
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('블랙')
+              ]
+            ),
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('바이크')
+              ]
+            ),
+            Column(
+              children: <Widget> [
+                Icon(
+                  Icons.local_taxi,
+                  size: 40,
+                ),
+                Text('트럭')
+              ]
+            )
           ]
         ),
-        Column(
-          children: <Widget> [
-            Icon(
-              Icons.local_taxi,
-              size: 40,
-            ),
-            Text('트럭')
-          ]
+        SizedBox(
+          height: 20
         )
-      ]
+      ],
     );
   }
 
