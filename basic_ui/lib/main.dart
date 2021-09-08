@@ -79,35 +79,114 @@ class _MyHomePageState extends State<MyHomePage> {
 class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        '홈 페이지',
-        style: TextStyle(fontSize: 40),
-      ),
+    return Column(
+      children: <Widget> [
+        _buildTop(),
+        _buildMiddle(),
+        _buildBottom(),
+      ],
     );
+  }
+
+  Widget _buildTop() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget> [
+        Column(
+          children: <Widget> [
+            Icon(
+              Icons.local_taxi,
+              size: 40,
+            ),
+            Text('택시')
+          ]
+        ),
+        Column(
+          children: <Widget> [
+            Icon(
+              Icons.local_taxi,
+              size: 40,
+            ),
+            Text('블랙')
+          ]
+        ),
+        Column(
+          children: <Widget> [
+            Icon(
+              Icons.local_taxi,
+              size: 40,
+            ),
+            Text('바이크')
+          ]
+        ),
+        Column(
+          children: <Widget> [
+            Icon(
+              Icons.local_taxi,
+              size: 40,
+            ),
+            Text('트럭')
+          ]
+        )
+      ]
+    );
+  }
+
+    Widget _buildMiddle() {
+    return Text('Middle');
+  }
+
+    Widget _buildBottom() {
+    return Text('Bottom');
   }
 }
 
 class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        '이용 서비스',
-        style: TextStyle(fontSize: 40),
-      ),
+    return Column(
+      children: <Widget> [
+        _buildTop(),
+        _buildMiddle(),
+        _buildBottom(),
+      ],
     );
+  }
+
+  Widget _buildTop() {
+    return Text('Top');
+  }
+
+    Widget _buildMiddle() {
+    return Text('Middle');
+  }
+
+    Widget _buildBottom() {
+    return Text('Bottom');
   }
 }
 
 class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        '내 정보',
-        style: TextStyle(fontSize: 40),
-      ),
+    return Column(
+      children: <Widget> [
+        _buildTop(),
+        _buildMiddle(),
+        _buildBottom(),
+      ],
     );
+  }
+
+  Widget _buildTop() {
+    return Text('Top');
+  }
+
+    Widget _buildMiddle() {
+    return Text('Middle');
+  }
+
+    Widget _buildBottom() {
+    return Text('Bottom');
   }
 }
